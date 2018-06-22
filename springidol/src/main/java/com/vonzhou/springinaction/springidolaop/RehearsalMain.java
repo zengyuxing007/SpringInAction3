@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class RehearsalMain {
     public static void main(String[] args) throws Exception{
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-idol.xml");
-        Performer performer = (Performer)context.getBean("carl2");
+        Performer performer = (Performer)context.getBean("ricky");
         performer.perform();
     }
 }

@@ -8,6 +8,7 @@ public class SongBook {
     }
 
     public String pickASong() {
-        return songTitles[0];
+        int index=(int)(Math.random()*songTitles.length);
+        return songTitles[index];
     }
 }

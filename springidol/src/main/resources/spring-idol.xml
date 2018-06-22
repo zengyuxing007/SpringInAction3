@@ -91,10 +91,12 @@
     </util:list>
 
 
+    <!--
     <bean id="stan"
           class="com.vonzhou.springinaction.springidolaop.Instrumentalist">
         <property name="song" value="#{systemProperties.STANS_SONG}"/>
     </bean>
+    -->
 
     <util:list id="songList">
         <bean class="com.vonzhou.springinaction.springidolaop.Song">
@@ -123,5 +125,6 @@
     <bean id="ricky"
           class="com.vonzhou.springinaction.springidolaop.Instrumentalist">
         <property name="song" value="#{magicSongBook.pickASong()}"/>
+        <property name="instrument" ref="saxophone"/>
     </bean>
 </beans>
